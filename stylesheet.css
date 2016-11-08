@@ -13,7 +13,7 @@ html, body {
 
 
 .divide {
-    border-top: 2px solid rgb(95, 200, 196);
+    border-top: 1px solid rgb(95, 200, 196);
     height: 30px;
     border-radius: 0;
 }
@@ -41,15 +41,14 @@ address {
 
 .header {
     margin-top: 50px;
-    position: fixed;
     text-align: center;
     float: left;
+    position: fixed;
 }
 
 .header .container {
     width: 100%;
     padding: 40px 50px 40px 50px;
-    margin-left: 25%;
 }
 
 .header img {
@@ -73,10 +72,11 @@ address {
 /* Section */
 .section {
     margin-top: 50px;
+    position: relative;
 }
 
 .section .container{
-    width: 65%;
+    width: 70%;
     padding: 0 40px 40px 40px;
     border-top: 3px solid rgb(95, 200, 196);
 }
@@ -101,10 +101,10 @@ address {
 /* footer */
 .footer {
     margin-top: 50px;
+    clear: both;
 }
 
 .footer .container {
-    width: auto;
     height: 80px;
     padding: 20px;
     text-align: right;

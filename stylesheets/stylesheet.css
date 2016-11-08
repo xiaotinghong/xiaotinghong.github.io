@@ -1,247 +1,116 @@
-body {
-  margin: 0;
-  padding: 0;
-  background: #151515 url("../images/bkg.png") 0 0;
-  color: #eaeaea;
-  font: 16px;
-  line-height: 1.5;
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-}
+html, body {
+    background-color: rgb(167, 222, 222);
+    background: url(https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/12187654_1721958894702748_7681855032431534199_n.jpg?oh=437a81a855a764f678050c429b191194&oe=58922A1D) no-repeat center center fixed;
+    background-size: cover;
+} 
 
-/* General & 'Reset' Stuff */
-
+/* Common */
 .container {
-  width: 90%;
-  max-width: 600px;
-  margin: 0 auto;
+    margin: 0 auto;
+    color: white;
+    background-color: rgba(0, 66, 75, .9);
 }
 
-section {
-  display: block;
-  margin: 0 0 20px 0;
+
+.divide {
+    border-top: 1px solid rgb(95, 200, 196);
+    height: 30px;
+    border-radius: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  margin: 0 0 20px;
+.nav-pills li a:hover {
+    background-color: rgb(95, 200, 196);
 }
 
-li {
-  line-height: 1.4 ;
+address {
+    font-size: 12px;
+    color: rgb(95, 200, 196);
 }
 
-/* Header, <header>
-   header   - container
-   h1       - project name
-   h2       - project description
-*/
-
-header {
-  background: rgba(0, 0, 0, 0.1);
-  width: 100%;
-  border-bottom: 1px dashed #b5e853;
-  padding: 20px 0;
-  margin: 0 0 40px 0;
+.labels {
+    margin: 30px;
 }
 
-header h1 {
-  font-size: 30px;
-  line-height: 1.5;
-  margin: 0 0 0 -40px;
-  font-weight: bold;
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-  color: #b5e853;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
-               0 0 5px rgba(181, 232, 83, 0.1),
-               0 0 10px rgba(181, 232, 83, 0.1);
-  letter-spacing: -1px;
-  -webkit-font-smoothing: antialiased;
+.label {
+    font-size: 12px;
+    margin: 2px;
+    margin-top: 20px;
 }
 
-header h1:before {
-  content: "./ ";
-  font-size: 24px;
+/* Header */
+
+.header {
+    margin-top: 50px;
+    text-align: center;
+    float: left;
+    position: fixed;
 }
 
-header h2 {
-  font-size: 18px;
-  font-weight: 300;
-  color: #666;
+.header .container {
+    width: 100%;
+    padding: 40px 50px 40px 50px;
 }
 
-#downloads .btn {
-  display: inline-block;
-  text-align: center;
-  margin: 0;
+.header img {
+    width: 150px;
+    border-radius: 100%;
 }
 
-/* Main Content
-*/
-
-#main_content {
-  width: 100%;
-  -webkit-font-smoothing: antialiased;
-}
-section img {
-  max-width: 100%
+.header h2 {
+    font-size: 25px;
+    margin-bottom: 15px;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-weight: normal;
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-  color: #b5e853;
-  letter-spacing: -0.03em;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
-               0 0 5px rgba(181, 232, 83, 0.1),
-               0 0 10px rgba(181, 232, 83, 0.1);
+.header ul {
+    list-style: none;
 }
 
-#main_content h1 {
-  font-size: 30px;
+.header a{
+    color: white;
 }
 
-#main_content h2 {
-  font-size: 24px;
+/* Section */
+.section {
+    margin-top: 50px;
+    position: relative;
 }
 
-#main_content h3 {
-  font-size: 18px;
+.section .container{
+    width: 70%;
+    padding: 0 40px 40px 40px;
+    border-top: 3px solid rgb(95, 200, 196);
 }
 
-#main_content h4 {
-  font-size: 14px;
+.section .content {
+    font-size: 30px;
+    text-align: center;
+    color: rgb(95, 200, 196);
+    margin-bottom: 25px;
+    margin-top: -30px;
+    text-transform: uppercase;
 }
 
-#main_content h5 {
-  font-size: 12px;
-  text-transform: uppercase;
-  margin: 0 0 5px 0;
+.section h4 {
+    font-size: 15px;
 }
 
-#main_content h6 {
-  font-size: 12px;
-  text-transform: uppercase;
-  color: #999;
-  margin: 0 0 5px 0;
+.section ul {
+    margin-bottom: 30px;
 }
 
-dt {
-  font-style: italic;
-  font-weight: bold;
+/* footer */
+.footer {
+    margin-top: 50px;
+    clear: both;
 }
 
-ul li {
-  list-style: none;
+.footer .container {
+    height: 80px;
+    padding: 20px;
+    text-align: right;
 }
 
-ul li:before {
-  content: ">>";
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-  font-size: 13px;
-  color: #b5e853;
-  margin-left: -37px;
-  margin-right: 21px;
-  line-height: 16px;
-}
-
-blockquote {
-  color: #aaa;
-  padding-left: 10px;
-  border-left: 1px dotted #666;
-}
-
-pre {
-  background: rgba(0, 0, 0, 0.9);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  padding: 10px;
-  font-size: 14px;
-  color: #b5e853;
-  border-radius: 2px;
-  -moz-border-radius: 2px;
-  -webkit-border-radius: 2px;
-  text-wrap: normal;
-  overflow: auto;
-  overflow-y: hidden;
-}
-
-table {
-  width: 100%;
-  margin: 0 0 20px 0;
-}
-
-th {
-  text-align: left;
-  border-bottom: 1px dashed #b5e853;
-  padding: 5px 10px;
-}
-
-td {
-  padding: 5px 10px;
-}
-
-hr {
-  height: 0;
-  border: 0;
-  border-bottom: 1px dashed #b5e853;
-  color: #b5e853;
-}
-
-/* Buttons
-*/
-
-.btn {
-  display: inline-block;
-  background: -webkit-linear-gradient(top, rgba(40, 40, 40, 0.3), rgba(35, 35, 35, 0.3) 50%, rgba(10, 10, 10, 0.3) 50%, rgba(0, 0, 0, 0.3));
-  padding: 8px 18px;
-  border-radius: 50px;
-  border: 2px solid rgba(0, 0, 0, 0.7);
-  border-bottom: 2px solid rgba(0, 0, 0, 0.7);
-  border-top: 2px solid rgba(0, 0, 0, 1);
-  color: rgba(255, 255, 255, 0.8);
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight: bold;
-  font-size: 13px;
-  text-decoration: none;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
-}
-
-.btn:hover {
-  background: -webkit-linear-gradient(top, rgba(40, 40, 40, 0.6), rgba(35, 35, 35, 0.6) 50%, rgba(10, 10, 10, 0.8) 50%, rgba(0, 0, 0, 0.8));
-}
-
-.btn .icon {
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  margin: 1px 8px 0 0;
-  float: left;
-}
-
-.btn-github .icon {
-  opacity: 0.6;
-  background: url("../images/blacktocat.png") 0 0 no-repeat;
-}
-
-/* Links
-   a, a:hover, a:visited
-*/
-
-a {
-  color: #63c0f5;
-  text-shadow: 0 0 5px rgba(104, 182, 255, 0.5);
-}
-
-/* Clearfix */
-
-.cf:before, .cf:after {
-  content:"";
-  display:table;
-}
-
-.cf:after {
-  clear:both;
-}
-
-.cf {
-  zoom:1;
+.footer h4{
+    font-size: 10px;
+    margin-right: 200px;
 }
